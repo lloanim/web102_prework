@@ -17,10 +17,17 @@ body {
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
+    justify-content: space-between;
 }
 
 .stats-container {
     display: flex;
+    align-items: center;
+}
+
+.stats-container:hover {
+    cursor: pointer;
+    /* box-shadow: 0 0 30px lightblue; */
 }
 
 .stats-card {
@@ -72,4 +79,102 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+
+/* New Additions */
+
+.title-area{
+    display: flex;
+    background-color: lightblue;
+    padding: 1%;
+    align-items: center;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
+
+.buttons-section {
+    display: flex;
+    gap: 10px;
+}
+
+.game-section, .about {
+    font-family: 'Cabin';
+    border: none;
+    padding: 5%;
+    margin: 1%;
+    border-radius: 7px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.game-section:hover, .about:hover {
+    box-shadow: 0 3px 10px grey;
+}
+
+.desc-title{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.description-container{
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgb(252, 239, 239);
+}
+
+.stats-title{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.stats-card:hover{
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
+}
+
+
+.game-title{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.game-desc {
+    text-align: center;
+    padding: 5px;
+}
+
+.filter-btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
+}
+
+.search-title{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+.search-input {
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background: white;
+    font-size: 15px;
+    width: 100%;
+    padding: 8px 16px;
+    box-sizing: border-box;
 }
